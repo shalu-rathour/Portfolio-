@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+  <link rel="stylesheet" href="ShaluPortfolio-1.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+ </style>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="./logo.png.image.png"class="logo">
+        <!-- <img src="https://logos.textgiraffe.com/logos/logo-name/39831711-designstyle-box-l.png"class="logo"> -->
+        <ul id="sidemenu" >
+          <li><a href="#header"><b> Home</b></a></li>
+          <li><a href="#about"> <b> About</b></a></li>
+          <li><a href="#services"><b>Services</b></a></li>
+          <li><a href="#contact">  <b> Contact</b></a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()""></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+         <h1> Hi,I'm <span class="red">Shalu Rathour</span><br>From Dehradun</h1>
+          <div><B> I'm Final year student </B></div>
+          
+      </div> 
+    </div>
+  </div>
+    <!------------------ About --------------->
+    <span id="element"></span> 
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img id="about-img" src="./IMG-20241130-WA0000 (3).jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>Hi I'm Shalu Rathour <br> I live in Dehradun Uttarakhand <br>
+            I'm currently pursuing my B.Tech degree in INFORMATION TECHNOLOGY from  G.B.P.U.A.T Pantnagar   <br>
+           I completed my High School from S.V.M High School Dakpathar and Intermediate from M.A.G.I.C Dakpathar <br>
+           I have a strong passion for  Web development and am always looking for new challenges </p>     <!-- ------------Tab------------- -->
+          <div class="tab-titel">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience </p>
+            <p class="tab-links" onclick="opentab('education')">Education </p>
+          </div>
+          <!-- ------------Skills------------- -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul><span>Web Development</span><br>Proficient in building responsive and interactive web applications using HTML, CSS, and JavaScript. Experienced in working with popular web development frameworks and libraries. Passionate about creating dynamic and user-friendly web experiences."</ul>
+            <ul><span>Python </span><br>"Proficient in building scalable and efficient Python applications using popular libraries and frameworks.</ul>
+            <ul><span>C/C++ </span><br>"Skilled in developing high-performance C/C++ applications using object-oriented programming principles.</ul>
+            
+            <ul><span>Wordpress</span><br>Proficient in building custom WordPress themes and plugins using HTML, and CSS. Proficient in optimizing WordPress websites for performance, security, and SEO.</ul>
+          </div>
+           <!-- ------------Experience------------- -->
+          <div class="tab-contents" id="experience"> 
+            <ul><span>  Connect With Dehradun  </span><br>
+              <b> Website Designer Intern</b> <br> <b> 09/07/2024-08/08/2024</b> </ul>
+            <ul><span>Entrepreneursip Development Cell IIT DELHI</span><br>  <b> Campus Ambassador Intern</b> <br> <b>10/12/2023 -10-02-2024 </b></ul>
+           
+            <ul><span> CodeSoft</span> <br>  <br> <B>Web Developer </B><br> <B>15/08/2023-15/09/2023</B> </ul>     
+            <ul><span> InterPe</span><br> <b> DSA Programmer</b> <br><b>14/08/2023-10/09/2023</b> </ul>
+                     <ul><span> Raysteeds Infotech Private Limited</span><br> <b>Software Intern</b> <br> <b>01/07/2023-14/08/2023</b>  </ul>
+            <ul><span> Bharat Sanchar Nigam Limited Dehradun</span><br>I am an apprentice at Bharat Sanchar Nigam Limited. </ul>
+          </div>
+           <!-- ------------Education------------- -->
+          <div class="tab-contents" id="education">
+            <ul><span>2021-2025 Current</span><br>I'm  pursuing my B.Tech degree in INFORMATION TECHNOLOGY from G.B.P.U.A.T Pantnagar</ul>
+            <ul><span>2019-2020</span><br>I completed my  Intermediate from M.A.G.I.C Dakpathar</ul>
+            <ul><span>2017-2018</span><br>I completed my High School from S.V.M High School Dakpathar </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------Services-------------------------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div class="read-more-container">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Developer</h2>
+          <p>Web Development Services: Crafting Your Digital Presence Web development services encompass a wide range of activities involved in creating, designing, and maintaining websites and web applications.</p>
+         <p class="tab-links active-link" onclick="opentab('web-devloper')">learn more</p>
+          <div class="tab-contents active-tab more" id="web-devloper">
+            Core Web Development Services
+            Web Design: Creating visually appealing and user-friendly website designs.Front-End Development:By investing in professional web development services, you can create a strong online presence and achieve your business goals.
+            Do you have any specific questions about web development services or need more information on a particular aspect?
+           </div>
+        </div>
+          <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>C/C++ Developer</h2>
+          <p>C/C++, a versatile and robust programming language , is widely used for developing a diverse range of applications. Here aare some of the core services offerd by C/C++ development.</p>
+          <p class="tab-links" onclick="opentab('C-devloper')">learn more</p>
+           <div class="tab-contents more" id="C-devloper">
+            Our love for C++ is no secret our dedicated C++ programmers have worked on numerous projects that have turned out to be masterpieces. We bring technical expertise, speed, and precision to every C++ application development project, so you can test harder, build faster, and accelerate go-to-market
+           </div>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>UI/UX Designer</h2>
+          <p>User Interface (UI) design focuses on the visual and interactive elements of a product, such as screens, buttons, icons, and other graphical components.<br>
+            User Experience (UX) design encompasses the overall interaction and experience a user has with a product, involving user needs, research, and creating a seamless experience.</p>
+          <p class="tab-links serv" onclick="opentab('data-analysis')">Learn more</p>
+           <div class="tab-contents more" id="data-analysis">
+            Our strategic approach to UX/UI design goes beyond aesthetics; we prioritize user-centric design principles and align creative prowess with your business goals, ensuring that every product element contributes to your success and resonates with your target audience.
+
+From the initial wireframes and prototypes to the final polished interfaces, we strive to deliver the highest quality standard so your users can effortlessly navigate and appreciate the digital world you've created.
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- ------------------------footer--------------- -->
+      <footer>
+        <div id="contact">
+            <div class="contact-left">
+                <div class="contact text-white">
+                  <ul>
+                    <h1 class="sub-title">Contact Me</h1>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>+917579444995</li>
+                      <li> <i class="fa fa-envelope" aria-hidden="true"></i>
+                      </i><span> rathourshalu123@gmail.com </span></li>
+                      <li><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        Dehradun Uttarakhand</li>
+                  </ul>
+                    <div class="icon">
+                    <a  href="https://www.github.com/shalu-rathour"
+                      target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/rathourshalu03" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shalu-rathour-672b8025b"
+                      target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                  <a href="./Resume 2024(shalu) (2).pdf" download class="btn">Download Resume</a>
+                </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button class="btn btn2">Submit</button>
+              </form>
+              
+            </div>
+        </div>
+        <div class="copy">
+           copyright &#169; creted by <span><i class="fa-solid fa-heart"></i></span> Shalu Rathour 
+        </div>
+    </footer>
+
+  <!-- ---------------------javascrips----------------- -->
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+     var typed = new Typed('#element', {
+     strings: ['web Devloper','Web Designer','Video Editor','C/C++ Devloper','Python Devloper','Public Spekar'],typeSpeed: 50,});
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+     function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+     // --------------sidemenu------------
+
+     var sidemenu=document.getElementById("sidemenu");
+     function openmenu(){
+      sidemenu.style.right = "0";
+     }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+     </script>
+     
+
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbw5rjjBl9CRn_kKa1ttQ38SzwOcS6UqJ6wFpCsBqA1uTLFNIVUOCHidaWohpWGEVGy4Tg/exec'
+      const form = document.forms['submit-to-google-sheet']
+
+      const msg = document.getElementById('msg')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = " Message send successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+   
+</body>
+</html>
+ 
